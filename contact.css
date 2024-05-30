@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: rgba(125, 125, 125, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #2149a6;
+    transition: color 0.3s ease;
+}
+
+header {
+    text-align: center;
+    padding: 100px 0 50px;
+}
+
+
+/* Section title */
+
+.section-title h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2149a6;
+}
+
+.section-title p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Selection projets */
+
+.projets-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    justify-content: space-around;
+}
+
+.projet {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.projet img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.projet:hover img {
+    transform: scale(1.1); /* Zoom au survol de l'image */
+    transition: transform 0.3s ease;
+}
+
+.projet-description {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* Bouton de téléchargement */
+.download-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #2149a6;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #2149a6; /* Couleur plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+
+/* Fleches */
+
+.arrow-link-container {
+    display: flex;
+    justify-content: space-between; /* Aligne les éléments au début et à la fin du conteneur */
+    padding: 20px; /* Ajoutez une marge à gauche et à droite du conteneur */
+}
+
+.left-arrow {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease; /* Ajoute une transition de couleur fluide */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.left-arrow:hover {
+    color: #2149a6; /* Couleur bleue au survol du lien */
+}
+
+
+
+.right-arrow {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    margin-right: 15px; /* Espacement entre les flèches */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.right-arrow:hover {
+    color: #2149a6; /* Couleur bleue au survol du lien */
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: -5px 0;
+    background-color: #2149a6;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
